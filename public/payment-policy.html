@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlashMed — Payment, Refund & Cancellation Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.8; }
+  .wrapper { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+  .logo-header { text-align: center; padding: 40px 0 30px; border-bottom: 3px solid #1a6bcc; margin-bottom: 40px; }
+  .logo-header h1 { font-size: 36px; color: #1a6bcc; font-weight: 900; letter-spacing: -1px; }
+  .logo-header p { color: #666; font-size: 14px; margin-top: 8px; }
+  .effective { background: #1a6bcc; color: #fff; padding: 12px 20px; border-radius: 8px; display: inline-block; font-size: 13px; margin-bottom: 30px; font-family: sans-serif; }
+
+  .critical-box { background: #fff3cd; border: 2px solid #ffc107; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .critical-box h3 { color: #856404; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .critical-box p { color: #533f03; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .red-box { background: #fff5f5; border: 2px solid #ff4444; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .red-box h3 { color: #cc0000; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .red-box p, .red-box li { color: #7a0000; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .green-box { background: #f0fff4; border: 2px solid #00bb88; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .green-box h3 { color: #00684a; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .green-box p, .green-box li { color: #1a5240; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .info-box { background: #f0f7ff; border: 2px solid #1a6bcc; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .info-box h3 { color: #1a6bcc; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .info-box p, .info-box li { color: #1a3a5c; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  h2 { font-size: 22px; color: #1a6bcc; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e0e8f5; font-family: sans-serif; }
+  h3 { font-size: 17px; color: #1a1a2e; margin: 28px 0 10px; font-family: sans-serif; }
+  h4 { font-size: 14px; color: #333; margin: 18px 0 8px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+  p { font-size: 15px; color: #333; margin-bottom: 14px; }
+  ul, ol { padding-left: 24px; margin-bottom: 16px; }
+  li { font-size: 15px; color: #333; margin-bottom: 8px; line-height: 1.7; }
+
+  .toc { background: #fff; border: 1px solid #e0e8f5; border-radius: 10px; padding: 24px 28px; margin-bottom: 40px; }
+  .toc h3 { color: #1a6bcc; margin-bottom: 14px; font-family: sans-serif; }
+  .toc ol { padding-left: 20px; }
+  .toc li { font-size: 14px; font-family: sans-serif; margin-bottom: 6px; color: #1a6bcc; }
+
+  .table-container { overflow-x: auto; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; background: #fff; font-family: sans-serif; font-size: 13px; box-shadow: 0 2px 8px rgba(26,107,204,0.06); border-radius: 10px; overflow: hidden; }
+  th { background: #1a6bcc; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
+  td { padding: 12px 14px; border-bottom: 1px solid #e0e8f5; vertical-align: top; color: #333; }
+  td.eligible { color: #00684a; font-weight: 600; }
+  td.not-eligible { color: #cc0000; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #f8f9fa; }
+
+  .timeline { background: #fff; border: 1px solid #e0e8f5; border-radius: 12px; padding: 28px 32px; margin: 24px 0; box-shadow: 0 2px 8px rgba(26,107,204,0.06); }
+  .timeline-item { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px dashed #e0e8f5; }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-step { background: #1a6bcc; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: sans-serif; flex-shrink: 0; }
+  .timeline-content { flex: 1; font-family: sans-serif; }
+  .timeline-content strong { color: #1a1a2e; display: block; margin-bottom: 4px; font-size: 14px; }
+  .timeline-content span { color: #666; font-size: 13px; }
+
+  .divider { border: none; border-top: 1px solid #e0e8f5; margin: 40px 0; }
+
+  .contact-box { background: #1a1a2e; color: #fff; border-radius: 12px; padding: 28px 32px; margin-top: 50px; }
+  .contact-box h3 { color: #00d4ff; margin-bottom: 14px; }
+  .contact-box p { color: #ccc; font-family: sans-serif; font-size: 14px; }
+  .contact-box a { color: #00d4ff; }
+
+  strong { color: #1a1a2e; }
+  @media (max-width: 600px) { .wrapper { padding: 20px 16px 60px; } h2 { font-size: 18px; } table { font-size: 11px; } th, td { padding: 8px; } }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="logo-header">
+    <h1>⚡ FlashMed</h1>
+    <p>Payment, Refund & Cancellation Policy</p>
+    <p style="margin-top: 6px; font-size: 13px;">flashmed.in | support.flashmed247@gmail.com</p>
+  </div>
+
+  <div style="text-align:center">
+    <span class="effective">Effective Date: April 26, 2026 | Version 1.0</span>
+  </div>
+
+  <!-- CRITICAL DISCLAIMER -->
+  <div class="critical-box" style="margin-top:30px">
+    <h3>Important — Read Before Making Any Payment</h3>
+    <p><strong>FlashMed is a technology platform — a connector service only.</strong> FlashMed does not sell, manufacture, stock, or supply any medicine, blood, or health product. Payments collected through FlashMed are passed to the respective registered Sellers, Blood Banks, and Delivery Partners after deduction of platform service fees and applicable taxes (TDS under Section 194-O of the Income Tax Act, 1961). All product-related claims, complaints, and disputes are the responsibility of the respective Seller, Blood Bank, or Delivery Partner. FlashMed acts solely as a payment facilitator and grievance coordinator.</p>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li>Scope and Applicability</li>
+      <li>Accepted Payment Methods</li>
+      <li>Pricing Structure and Fees</li>
+      <li>How Payments Work — Step by Step</li>
+      <li>Cancellation Policy — Customers</li>
+      <li>Refund Policy — Eligibility Matrix</li>
+      <li>Refund Process and Timelines</li>
+      <li>Blood Emergency Service — Special Payment Terms</li>
+      <li>Failed Payments and Stuck Transactions</li>
+      <li>Cash on Delivery (COD) Terms</li>
+      <li>Seller and Delivery Partner Settlements</li>
+      <li>Chargebacks, Disputes, and Fraud</li>
+      <li>Promotional Credits, Tokens, and Refunds</li>
+      <li>Tax Documentation and Invoices</li>
+      <li>Force Majeure and Service Disruptions</li>
+      <li>Grievance and Dispute Resolution</li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2>1. Scope and Applicability</h2>
+  <p>This Payment, Refund and Cancellation Policy ("Policy") applies to all financial transactions conducted through the FlashMed mobile application and website (flashmed.in). This Policy forms an integral part of the FlashMed Terms and Conditions. By using the Platform and making any payment, you confirm that you have read, understood, and agreed to this Policy in full.</p>
+
+  <p>This Policy applies to:</p>
+  <ul>
+    <li>All Customers placing medicine orders or blood requests</li>
+    <li>All Sellers (pharmacies and medical stores) receiving payouts</li>
+    <li>All Blood Banks coordinating through the Platform</li>
+    <li>All Delivery Partners receiving delivery fees</li>
+    <li>All transactions in Indian Rupees (INR) only</li>
+  </ul>
+
+  <p>Where any provision of this Policy conflicts with applicable Indian law (including the Consumer Protection Act, 2019, the Reserve Bank of India guidelines, or Income Tax Act, 1961), the applicable law shall prevail to the minimum extent necessary, and the remainder of this Policy shall remain in full effect.</p>
+
+  <!-- SECTION 2 -->
+  <h2>2. Accepted Payment Methods</h2>
+
+  <p>FlashMed accepts the following payment methods through its integrated payment gateway partner, Razorpay (a PCI-DSS Level 1 compliant payment processor):</p>
+
+  <div class="info-box">
+    <h3>Online Payment Methods</h3>
+    <ul>
+      <li><strong>UPI</strong> — Google Pay, PhonePe, Paytm, BHIM, Amazon Pay, and any UPI-supporting app</li>
+      <li><strong>Debit Cards</strong> — Visa, MasterCard, RuPay, Maestro</li>
+      <li><strong>Credit Cards</strong> — Visa, MasterCard, American Express, Diners Club</li>
+      <li><strong>Net Banking</strong> — All major Indian banks (50+ banks supported)</li>
+      <li><strong>Wallets</strong> — Paytm Wallet, MobiKwik, Amazon Pay, FreeCharge, JioMoney</li>
+      <li><strong>EMI</strong> — Available on select credit cards for orders above ₹3,000</li>
+      <li><strong>Cardless EMI</strong> — Available for verified customers (subject to eligibility)</li>
+    </ul>
+  </div>
+
+  <h3>2.1 Cash on Delivery (COD)</h3>
+  <p>Cash on Delivery is offered selectively, subject to:</p>
+  <ul>
+    <li>Customer location being within COD-enabled service zones</li>
+    <li>Order value being below ₹2,000 (FlashMed reserves the right to modify this limit)</li>
+    <li>Customer not having any pending dues or COD-rejected history</li>
+    <li>Specific medicine categories being COD-eligible (some prescription drugs require pre-payment)</li>
+  </ul>
+  <p>FlashMed reserves the right to disable COD for specific orders, customers, or zones at its sole discretion based on operational and risk considerations.</p>
+
+  <h3>2.2 Payment Security</h3>
+  <ul>
+    <li>FlashMed does not store any card numbers, CVV codes, UPI PINs, or banking credentials</li>
+    <li>All transaction data is encrypted using TLS 1.3 during transmission</li>
+    <li>Razorpay handles all card and banking data in a PCI-DSS compliant environment</li>
+    <li>FlashMed only stores transaction reference IDs and payment status for accounting and dispute resolution purposes</li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2>3. Pricing Structure and Fees</h2>
+
+  <p>The total amount payable by a Customer for any order consists of the following components:</p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Charged By</th>
+          <th>Description</th>
+          <th>Refundable?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Medicine Price</strong></td>
+          <td>Seller (Pharmacy)</td>
+          <td>The price of medicines as quoted by the registered Seller. Set independently by the Seller. FlashMed does not control or modify Seller pricing.</td>
+          <td class="eligible">Yes (conditional)</td>
+        </tr>
+        <tr>
+          <td><strong>Platform Fee</strong></td>
+          <td>FlashMed</td>
+          <td>A flat fee of ₹99 per order to cover technology infrastructure, payment processing, customer support, and platform maintenance.</td>
+          <td class="not-eligible">Generally No</td>
+        </tr>
+        <tr>
+          <td><strong>Delivery Fee</strong></td>
+          <td>Delivery Partner</td>
+          <td>Charged by the Delivery Partner based on distance and order weight. Displayed to the Customer before payment confirmation.</td>
+          <td class="eligible">Yes (if undelivered)</td>
+        </tr>
+        <tr>
+          <td><strong>GST (where applicable)</strong></td>
+          <td>Seller / Government</td>
+          <td>GST is charged by the Seller as per applicable rates on medicines. FlashMed does not collect GST on the Seller's behalf.</td>
+          <td class="eligible">Yes (with order)</td>
+        </tr>
+        <tr>
+          <td><strong>Convenience Fee</strong></td>
+          <td>Razorpay (passed through)</td>
+          <td>Some payment methods (credit cards, certain wallets) may carry a convenience fee charged by the payment processor. This is disclosed before payment.</td>
+          <td class="not-eligible">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3.1 Seller Payout Structure</h3>
+  <p>From the Medicine Price collected by FlashMed on behalf of a Seller, the following deductions are made before payout:</p>
+  <ul>
+    <li><strong>FlashMed Commission: 8%</strong> of the Medicine Price (technology and operational fee)</li>
+    <li><strong>TDS: 1%</strong> of the Medicine Price under Section 194-O of the Income Tax Act, 1961 (deducted and deposited with the Income Tax Department on the Seller's PAN)</li>
+    <li><strong>Net Seller Receipt: 91%</strong> of the Medicine Price</li>
+  </ul>
+  <p>TDS certificates are made available to Sellers on a quarterly basis. Sellers are responsible for declaring this income and reconciling TDS in their tax filings.</p>
+
+  <h3>3.2 Transparency Commitment</h3>
+  <p>All fee components are clearly displayed to the Customer on the Payment Screen before payment is initiated. By proceeding to payment, the Customer acknowledges and accepts the fee structure.</p>
+
+  <!-- SECTION 4 -->
+  <h2>4. How Payments Work — Step by Step</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-step">1</div>
+      <div class="timeline-content">
+        <strong>Order Placed (No Charge Yet)</strong>
+        <span>Customer uploads prescription and submits order. <strong>No money is charged at this stage.</strong> The order is broadcast to nearby Sellers as a request only.</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">2</div>
+      <div class="timeline-content">
+        <strong>Seller Quotes Price</strong>
+        <span>A Seller accepts the order and quotes a price based on the prescribed medicines. The Customer sees the price on the Order Tracking screen.</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">3</div>
+      <div class="timeline-content">
+        <strong>Customer Confirms and Pays</strong>
+        <span>Customer reviews the quoted price + platform fee + delivery fee, and proceeds to payment via Razorpay. Payment is captured (held) but not yet finalized.</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">4</div>
+      <div class="timeline-content">
+        <strong>Order Fulfillment</strong>
+        <span>Seller prepares medicines, Delivery Partner picks up and delivers. Customer receives medicines and shares the delivery OTP.</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">5</div>
+      <div class="timeline-content">
+        <strong>Payment Settlement</strong>
+        <span>Once delivery is confirmed via OTP, FlashMed initiates payout to the Seller (91% net) and the Delivery Partner (delivery fee minus applicable TDS) within 24 hours.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2>5. Cancellation Policy — Customers</h2>
+
+  <p>Customers may cancel an order based on the order status at the time of cancellation. Cancellation rights diminish as the order progresses through fulfillment.</p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Order Status</th>
+          <th>Cancellation Allowed</th>
+          <th>Refund Eligibility</th>
+          <th>Cancellation Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PENDING</strong> (Awaiting Seller acceptance)</td>
+          <td class="eligible">Yes — Free cancellation</td>
+          <td>Full refund (if paid)</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td><strong>SELLER_ACCEPTED</strong> (Seller preparing)</td>
+          <td class="eligible">Yes — With caveats</td>
+          <td>Full refund minus ₹20 processing fee</td>
+          <td>₹20</td>
+        </tr>
+        <tr>
+          <td><strong>PRICE_QUOTED</strong> (Awaiting your confirmation)</td>
+          <td class="eligible">Yes — Free cancellation</td>
+          <td>No payment yet, no refund needed</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td><strong>DELIVERY_ASSIGNED</strong></td>
+          <td class="not-eligible">Restricted</td>
+          <td>Medicine cost refunded; platform + delivery fees forfeited</td>
+          <td>Platform fee + delivery fee</td>
+        </tr>
+        <tr>
+          <td><strong>PICKED_UP</strong> / <strong>OUT_FOR_DELIVERY</strong></td>
+          <td class="not-eligible">No (rare exceptions)</td>
+          <td>Only if Customer was unavailable; partial refund at FlashMed's discretion</td>
+          <td>Full delivery + 50% medicine cost</td>
+        </tr>
+        <tr>
+          <td><strong>DELIVERED</strong></td>
+          <td class="not-eligible">No</td>
+          <td>Only if defect/wrong product; case-by-case</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.1 How to Cancel an Order</h3>
+  <ol>
+    <li>Open the FlashMed app and navigate to "My Orders"</li>
+    <li>Select the active order you wish to cancel</li>
+    <li>Tap "Cancel Order" if available</li>
+    <li>Provide a brief reason for cancellation (optional but appreciated)</li>
+    <li>Confirm the cancellation</li>
+  </ol>
+  <p>If the in-app cancellation option is unavailable due to order status, you may contact support at <strong>support.flashmed247@gmail.com</strong> within 30 minutes of order placement for assistance. Late cancellation requests may not be accommodated.</p>
+
+  <h3>5.2 Cancellation by FlashMed or the Seller</h3>
+  <p>FlashMed or the assigned Seller may cancel an order under the following circumstances:</p>
+  <ul>
+    <li><strong>Medicines unavailable:</strong> Seller unable to source the prescribed medicines</li>
+    <li><strong>Invalid prescription:</strong> Prescription is unclear, expired, or appears fraudulent</li>
+    <li><strong>Restricted substances:</strong> Order contains items the Seller cannot dispense</li>
+    <li><strong>Delivery zone limitation:</strong> No Delivery Partner available in your area</li>
+    <li><strong>Suspicious activity:</strong> Order flagged as potentially fraudulent</li>
+    <li><strong>Force majeure:</strong> Natural disasters, strikes, lockdowns, or other extraordinary events</li>
+  </ul>
+  <p>In all such cases, the Customer will receive a <strong>full refund</strong> including platform fee within 5–7 business days, and a notification explaining the cancellation reason.</p>
+
+  <h3>5.3 Repeated Cancellation Penalty</h3>
+  <p>To protect Sellers from operational losses caused by frequent cancellations:</p>
+  <ul>
+    <li>Customers cancelling more than <strong>3 orders in a 30-day period</strong> after Seller acceptance may have COD disabled on their account</li>
+    <li>Customers cancelling more than <strong>5 orders in a 30-day period</strong> may have their account temporarily suspended for investigation</li>
+    <li>Repeated abusive cancellation patterns may result in permanent account termination</li>
+  </ul>
+
+  <!-- SECTION 6 -->
+  <h2>6. Refund Policy — Eligibility Matrix</h2>
+
+  <div class="green-box">
+    <h3>Refunds Are Eligible In These Cases</h3>
+    <ul>
+      <li>Order cancelled before Seller acceptance — full refund</li>
+      <li>Seller unable to fulfill order — full refund including platform fee</li>
+      <li>Wrong medicine delivered (different from prescription) — full refund + return collection</li>
+      <li>Expired or visibly damaged medicines delivered — full refund + return collection</li>
+      <li>Order not delivered within 24 hours of pickup (operational failure) — full refund</li>
+      <li>Payment processed but order not created (technical glitch) — full refund within 7 days</li>
+      <li>Duplicate payment for the same order — duplicate refunded within 7 days</li>
+      <li>Counterfeit medicine confirmed by independent verification — full refund + report to drug authorities</li>
+      <li>Cold chain failure for temperature-sensitive medicines (insulin, vaccines) — full refund</li>
+    </ul>
+  </div>
+
+  <div class="red-box">
+    <h3>Refunds Are NOT Eligible In These Cases</h3>
+    <ul>
+      <li>Customer changed their mind after Seller began preparing the order</li>
+      <li>Medicines opened, partially consumed, or used (per drug safety regulations, opened medicine packs cannot be returned)</li>
+      <li>Delivery failed because Customer was unavailable or provided wrong address</li>
+      <li>Customer refused delivery without valid reason</li>
+      <li>OTP was shared with the Delivery Partner (this constitutes acceptance of delivery)</li>
+      <li>Customer claims dissatisfaction with medicine effects (medicine efficacy is not FlashMed's responsibility)</li>
+      <li>Refund requested more than <strong>48 hours after delivery</strong></li>
+      <li>Customer ordered wrong medicine despite valid prescription being uploaded</li>
+      <li>Customer paid for COD but did not receive medicines (in such cases, no payment was made; nothing to refund)</li>
+      <li>Customer disputes price after confirming and paying (price was disclosed before payment)</li>
+      <li>Damage caused by Customer mishandling after delivery</li>
+      <li>Loss of medicines after they were handed over to a third party not authorized by the Customer</li>
+    </ul>
+  </div>
+
+  <h3>6.1 Special Categories — Non-Returnable Items</h3>
+  <p>For health and safety reasons enforced by Indian drug regulations, the following medicine categories are <strong>strictly non-returnable and non-refundable</strong> once delivered, except in cases of confirmed counterfeit, expiry, or visible tampering:</p>
+  <ul>
+    <li>All prescription medicines (Schedule H, H1, X drugs)</li>
+    <li>Vaccines and biologics</li>
+    <li>Insulin and other temperature-sensitive medicines</li>
+    <li>Eye drops, ear drops, and nasal sprays</li>
+    <li>Topical creams, ointments, and gels (once seal is broken)</li>
+    <li>Sanitary products and personal hygiene items</li>
+    <li>Baby formula and infant nutrition</li>
+    <li>Surgical disposables (gloves, masks, syringes, etc.)</li>
+    <li>Diagnostic test kits (pregnancy tests, glucose strips, etc.)</li>
+  </ul>
+
+  <h3>6.2 Partial Refunds</h3>
+  <p>Partial refunds may be issued in the following situations:</p>
+  <ul>
+    <li>Some medicines from a multi-item order were delivered, others were unavailable — refund only for missing items</li>
+    <li>Order delivered late causing partial inconvenience — discretionary partial refund</li>
+    <li>Damaged packaging affecting some but not all items — refund only for affected items</li>
+  </ul>
+  <p>Partial refunds are calculated proportionally based on the original price of the affected items.</p>
+
+  <h3>6.3 How to Request a Refund</h3>
+  <ol>
+    <li>Open the FlashMed app and navigate to the order in question</li>
+    <li>Tap "Report Issue" or "Request Refund"</li>
+    <li>Select the reason for refund from the provided categories</li>
+    <li>Upload supporting evidence: photos of damaged/wrong/expired medicines, packaging, etc.</li>
+    <li>Submit the request</li>
+    <li>Alternatively, email <strong>support.flashmed247@gmail.com</strong> with order ID, reason, and photo evidence</li>
+  </ol>
+
+  <!-- SECTION 7 -->
+  <h2>7. Refund Process and Timelines</h2>
+
+  <div class="info-box">
+    <h3>Standard Refund Timelines</h3>
+    <p>Once a refund is approved, the amount is initiated to the original payment method. Actual credit time depends on the payment method:</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Payment Method</th>
+          <th>Refund Initiation</th>
+          <th>Customer Receives In</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UPI</td>
+          <td>Within 24 hours of approval</td>
+          <td>1–3 business days</td>
+        </tr>
+        <tr>
+          <td>Credit / Debit Card</td>
+          <td>Within 24 hours of approval</td>
+          <td>5–7 business days</td>
+        </tr>
+        <tr>
+          <td>Net Banking</td>
+          <td>Within 24 hours of approval</td>
+          <td>3–5 business days</td>
+        </tr>
+        <tr>
+          <td>Wallets (Paytm, Amazon Pay, etc.)</td>
+          <td>Within 24 hours of approval</td>
+          <td>1–2 business days</td>
+        </tr>
+        <tr>
+          <td>EMI</td>
+          <td>Within 24 hours of approval</td>
+          <td>5–10 business days; reflects in next billing cycle</td>
+        </tr>
+        <tr>
+          <td>COD (no online payment)</td>
+          <td>N/A</td>
+          <td>Not applicable; refund as bank transfer to Customer's specified account within 7 business days</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.1 Refund Investigation Period</h3>
+  <p>FlashMed reserves a maximum of <strong>72 hours</strong> from the receipt of a refund request to investigate the claim, coordinate with the Seller and Delivery Partner, and approve or decline the refund. The Customer will be informed of the decision via email and in-app notification.</p>
+
+  <h3>7.2 Refund Status Tracking</h3>
+  <p>Customers can track the status of any refund in the "My Orders" section under the relevant order. Status indicators include: <em>Refund Requested → Under Review → Approved/Declined → Initiated → Credited</em>.</p>
+
+  <h3>7.3 Refund Disputes</h3>
+  <p>If a refund has been initiated by FlashMed but the Customer has not received the credit within the stipulated timeline, the Customer should:</p>
+  <ol>
+    <li>Verify with their bank/wallet/UPI app first</li>
+    <li>Provide FlashMed with the Refund Reference Number (provided in the refund confirmation email)</li>
+    <li>If unresolved after 7 additional business days, FlashMed will raise the issue with Razorpay and the relevant bank for trace and resolution</li>
+  </ol>
+
+  <!-- SECTION 8 -->
+  <h2>8. Blood Emergency Service — Special Payment Terms</h2>
+
+  <div class="red-box">
+    <h3>Critical Disclaimer for Blood Emergency Service</h3>
+    <p><strong>FlashMed does not collect, store, transport, or supply blood or blood components.</strong> Any payment associated with the Blood Emergency feature is strictly a <strong>technology coordination fee</strong> charged by FlashMed for connecting the requester with registered blood banks and voluntary donors. This fee is not, and cannot be construed as, payment for blood. Charging for blood itself is illegal under Indian law.</p>
+  </div>
+
+  <h3>8.1 Blood Request Coordination Fee</h3>
+  <p>To submit a Blood Emergency request through FlashMed, a one-time coordination fee of <strong>₹49</strong> is charged to the requester. This fee covers:</p>
+  <ul>
+    <li>Notification dispatch to matching blood banks within the search radius</li>
+    <li>Notification dispatch to matching voluntary donors</li>
+    <li>Real-time matching algorithm and SMS gateway costs</li>
+    <li>Operational support for the duration of the request</li>
+  </ul>
+
+  <h3>8.2 Blood Bank Charges</h3>
+  <p>Any charges levied by the registered Blood Bank for blood processing, testing, storage, or supply are governed by:</p>
+  <ul>
+    <li>The Drugs and Cosmetics Act, 1940, Schedule F Part XII-B</li>
+    <li>National Blood Policy and NACO guidelines</li>
+    <li>State Drug Controller pricing notifications</li>
+  </ul>
+  <p>These charges are paid <strong>directly to the Blood Bank</strong> by the requester or their hospital. FlashMed does not collect, process, or settle Blood Bank charges. FlashMed has no role in the pricing or invoicing of blood services.</p>
+
+  <h3>8.3 Donor Reimbursement</h3>
+  <p>Voluntary donors who travel to a blood bank to donate may receive a small <strong>transport reimbursement of up to ₹200</strong> through FlashMed. This reimbursement covers actual transportation costs only and explicitly does not constitute payment for blood (which would violate Indian law). Reimbursement is processed within 48 hours of confirmed donation by the blood bank.</p>
+
+  <h3>8.4 Refund of Blood Coordination Fee</h3>
+  <ul>
+    <li><strong>Eligible:</strong> Request was technically failed to dispatch (no notifications sent due to FlashMed system error)</li>
+    <li><strong>Not eligible:</strong> Request was dispatched but no blood bank or donor responded; requester withdrew the request voluntarily; request was found to be fraudulent (no refund + permanent ban)</li>
+  </ul>
+
+  <!-- SECTION 9 -->
+  <h2>9. Failed Payments and Stuck Transactions</h2>
+
+  <h3>9.1 Payment Failed but Money Deducted</h3>
+  <p>In case a Customer's payment is marked as failed but money has been deducted from their account:</p>
+  <ul>
+    <li>Most such "failed but deducted" transactions are <strong>auto-reversed by the bank within 5–7 business days</strong> without any action needed</li>
+    <li>If no refund is received within 7 business days, contact <strong>support.flashmed247@gmail.com</strong> with: Customer ID, order ID (if any), bank transaction reference, and a screenshot of the bank debit message</li>
+    <li>FlashMed will work with Razorpay and the bank to trace and recover the amount within 14 additional business days</li>
+  </ul>
+
+  <h3>9.2 Order Not Created Despite Payment</h3>
+  <p>If a Customer makes a payment but no order appears in their "My Orders" section, this typically indicates a network failure during the final order-creation step. In such cases:</p>
+  <ul>
+    <li>Do <strong>not</strong> retry the payment immediately</li>
+    <li>Wait 10 minutes and check "My Orders" again — most orders auto-reconcile</li>
+    <li>If the order still does not appear, contact support with the payment reference</li>
+    <li>FlashMed will either create the order manually or refund the payment within 48 hours</li>
+  </ul>
+
+  <h3>9.3 Duplicate Payments</h3>
+  <p>If a Customer accidentally pays twice for the same order (e.g., by retrying a payment that was actually successful):</p>
+  <ul>
+    <li>The duplicate payment will be auto-detected and refunded within 5 business days</li>
+    <li>If not auto-refunded, the Customer should contact support with both transaction references</li>
+  </ul>
+
+  <!-- SECTION 10 -->
+  <h2>10. Cash on Delivery (COD) Terms</h2>
+
+  <h3>10.1 COD Procedure</h3>
+  <ul>
+    <li>Customer pays the exact order amount (medicine price + platform fee + delivery fee) in cash to the Delivery Partner upon receipt of medicines</li>
+    <li>Delivery Partner provides a receipt issued by the Seller</li>
+    <li>Customer shares the delivery OTP only after receiving medicines and paying</li>
+    <li>Delivery Partner remits the cash to the Seller within 24 hours; Seller settles platform fee with FlashMed weekly</li>
+  </ul>
+
+  <h3>10.2 COD Refunds</h3>
+  <p>For COD orders, since no online payment is made:</p>
+  <ul>
+    <li>If the order is not delivered, no refund is required (no money was charged)</li>
+    <li>If the order was delivered and a partial refund is approved (defect, missing item, etc.), the refund is processed via <strong>bank transfer</strong> to a bank account specified by the Customer within 7 business days</li>
+    <li>The Customer must provide accurate bank details (name, account number, IFSC) for refund processing</li>
+  </ul>
+
+  <h3>10.3 COD Disablement</h3>
+  <p>FlashMed may disable COD for a Customer's account in the following cases:</p>
+  <ul>
+    <li>3 or more COD orders cancelled or refused at the door in a 30-day period</li>
+    <li>Pattern of fraud or abuse detected</li>
+    <li>Outstanding dues from a previous COD order</li>
+    <li>Customer location is in a high-risk delivery zone</li>
+  </ul>
+
+  <!-- SECTION 11 -->
+  <h2>11. Seller and Delivery Partner Settlements</h2>
+
+  <h3>11.1 Seller Settlement Cycle</h3>
+  <ul>
+    <li>Sellers are paid for delivered orders on a <strong>weekly settlement cycle</strong> (every Monday for the previous week's deliveries)</li>
+    <li>Payouts are made via NEFT/IMPS to the Seller's registered bank account</li>
+    <li>A detailed settlement report is provided in the Seller dashboard, including: order list, gross sales, FlashMed commission deducted, TDS deducted, net amount payable</li>
+    <li>Sellers must verify settlement reports within 7 days of receipt; disputes raised after 7 days will be considered closed</li>
+  </ul>
+
+  <h3>11.2 Delivery Partner Settlement Cycle</h3>
+  <ul>
+    <li>Delivery Partners are paid on a <strong>weekly settlement cycle</strong> (every Tuesday for the previous week's completed deliveries)</li>
+    <li>Payouts are made via NEFT/IMPS to the Delivery Partner's registered bank account</li>
+    <li>TDS at applicable rates may be deducted depending on annual earnings and PAN availability</li>
+  </ul>
+
+  <h3>11.3 Settlement Hold</h3>
+  <p>FlashMed reserves the right to hold any settlement under the following circumstances:</p>
+  <ul>
+    <li>Pending Customer complaints or refund disputes against the Seller or Delivery Partner</li>
+    <li>Suspected fraudulent activity</li>
+    <li>Regulatory or legal notice received against the Seller/Delivery Partner</li>
+    <li>Outstanding dues owed by the Seller/Delivery Partner to FlashMed</li>
+    <li>Failure to provide valid PAN or banking details</li>
+  </ul>
+  <p>Held settlements are released once the issue is resolved. Sellers and Delivery Partners are notified of any settlement holds within 24 hours.</p>
+
+  <h3>11.4 Reverse Settlement (Chargeback)</h3>
+  <p>If a Customer initiates a chargeback through their bank for an order already settled to a Seller, FlashMed may recover the chargeback amount from the Seller's next settlement, subject to investigation. If no further settlements are pending, FlashMed will issue an invoice to the Seller for repayment.</p>
+
+  <!-- SECTION 12 -->
+  <h2>12. Chargebacks, Disputes, and Fraud</h2>
+
+  <h3>12.1 Chargeback Policy</h3>
+  <p>A "chargeback" is when a Customer disputes a transaction with their card-issuing bank to reverse the payment. FlashMed treats chargebacks seriously:</p>
+  <ul>
+    <li>Customers experiencing issues should first contact FlashMed support to resolve before initiating a chargeback. Most issues are resolved within 72 hours through support</li>
+    <li>If a Customer initiates a chargeback without prior contact with FlashMed support, their account may be temporarily suspended pending investigation</li>
+    <li>FlashMed will provide all transaction evidence (order details, prescription, delivery confirmation, OTP record) to the bank to defend valid charges</li>
+    <li>Customers found to have initiated <strong>fraudulent chargebacks</strong> (i.e., goods received but disputed) will face permanent account termination and potential legal action</li>
+  </ul>
+
+  <h3>12.2 Fraud Detection</h3>
+  <p>FlashMed employs automated and manual fraud detection systems. Indicators that may flag a transaction include:</p>
+  <ul>
+    <li>Multiple high-value orders placed in rapid succession</li>
+    <li>Mismatch between billing and delivery addresses across orders</li>
+    <li>Use of stolen or compromised payment instruments</li>
+    <li>Orders placed using suspicious VPN or proxy connections</li>
+    <li>Multiple accounts linked to the same device or IP attempting promo abuse</li>
+  </ul>
+  <p>Flagged transactions may be held for verification before fulfillment. Customers may be asked to provide additional identity verification.</p>
+
+  <h3>12.3 Reporting Suspicious Activity</h3>
+  <p>If a Customer notices any unauthorized transaction on their FlashMed account, they should immediately:</p>
+  <ol>
+    <li>Change their account password (if applicable) or revoke device access</li>
+    <li>Email <strong>support.flashmed247@gmail.com</strong> with the subject "URGENT: Unauthorized Transaction"</li>
+    <li>Contact their bank to block the compromised payment instrument</li>
+    <li>File a complaint with cybercrime authorities at cybercrime.gov.in if applicable</li>
+  </ol>
+
+  <!-- SECTION 13 -->
+  <h2>13. Promotional Credits, Tokens, and Refunds</h2>
+
+  <h3>13.1 FlashMed Tokens</h3>
+  <p>FlashMed operates a referral token system where users earn tokens by referring others. Token policy:</p>
+  <ul>
+    <li>Conversion rate: <strong>4 tokens = ₹1</strong> (i.e., 400 tokens = ₹100)</li>
+    <li>Tokens are credited only after the referee places <strong>3 successful orders</strong></li>
+    <li>Tokens can be used to discount future orders, up to a maximum of 50% of the medicine price</li>
+    <li>Tokens have no cash value and cannot be withdrawn or transferred</li>
+    <li>Tokens expire 12 months from the date of credit</li>
+    <li>If an order paid using tokens is refunded, the token portion is credited back as tokens (not cash)</li>
+  </ul>
+
+  <h3>13.2 Promotional Discounts and Coupons</h3>
+  <ul>
+    <li>Promotional discounts apply only to the medicine price; platform fee and delivery fee are excluded from discounts unless explicitly stated</li>
+    <li>Coupons are valid only during the promotional period and cannot be combined unless specified</li>
+    <li>If an order with a promotional discount is fully refunded, the refund will be the actual amount paid (i.e., post-discount), not the original price</li>
+    <li>FlashMed reserves the right to revoke coupons or discounts found to be obtained through fraud or abuse</li>
+  </ul>
+
+  <h3>13.3 First-User Offers</h3>
+  <p>First-time user offers (e.g., "First order 10% off") are non-transferable and tied to one phone number / device. Multiple accounts created to abuse first-user offers will be detected and blocked, with all promotional discounts reversed.</p>
+
+  <!-- SECTION 14 -->
+  <h2>14. Tax Documentation and Invoices</h2>
+
+  <h3>14.1 Customer Invoices</h3>
+  <ul>
+    <li>For every successful order, a digital invoice is generated and made available in the FlashMed app under "My Orders → View Invoice"</li>
+    <li>Invoices include: medicine itemization, prices, GST (where applicable), platform fee, delivery fee, and total amount paid</li>
+    <li>Invoices are issued by the registered Seller (with their GSTIN) for the medicine portion. FlashMed issues a separate invoice for the platform fee under FlashMed's GSTIN</li>
+    <li>Customers can request a copy via email at any time</li>
+  </ul>
+
+  <h3>14.2 Seller Tax Documentation</h3>
+  <ul>
+    <li>Sellers receive monthly settlement statements detailing all transactions, FlashMed commission, and TDS deducted</li>
+    <li>TDS certificates (Form 16A) are made available quarterly via the Seller dashboard</li>
+    <li>Sellers are responsible for filing their own GST returns and reconciling TDS in their income tax filings</li>
+  </ul>
+
+  <h3>14.3 Delivery Partner Tax Documentation</h3>
+  <ul>
+    <li>Delivery Partners earning above the threshold prescribed under the Income Tax Act will have applicable TDS deducted</li>
+    <li>TDS certificates are issued quarterly</li>
+    <li>Delivery Partners are advised to maintain personal records of earnings and consult a tax professional for filing returns</li>
+  </ul>
+
+  <!-- SECTION 15 -->
+  <h2>15. Force Majeure and Service Disruptions</h2>
+
+  <p>FlashMed shall not be liable for any failure or delay in performance, including processing payments or refunds, due to events beyond reasonable control, including but not limited to:</p>
+  <ul>
+    <li>Natural disasters (floods, earthquakes, cyclones)</li>
+    <li>Pandemics or public health emergencies</li>
+    <li>Government-mandated lockdowns or curfews</li>
+    <li>Bank holidays, payment gateway outages, RBI directives</li>
+    <li>Cyberattacks, distributed denial-of-service (DDoS) attacks</li>
+    <li>Internet or telecommunications infrastructure failures</li>
+    <li>Civil unrest, war, terrorism, or strikes</li>
+  </ul>
+
+  <p>During force majeure events:</p>
+  <ul>
+    <li>Order acceptance, fulfillment, and settlement timelines may be extended</li>
+    <li>Refund processing may take longer than the standard timelines</li>
+    <li>FlashMed will communicate updates via in-app notifications and email</li>
+    <li>No liability shall arise for delays attributable to such events</li>
+  </ul>
+
+  <!-- SECTION 16 -->
+  <h2>16. Grievance and Dispute Resolution</h2>
+
+  <h3>16.1 Step 1 — Customer Support</h3>
+  <p>Most payment, refund, and cancellation issues are resolved by contacting FlashMed support:</p>
+  <ul>
+    <li><strong>Email:</strong> support.flashmed247@gmail.com</li>
+    <li><strong>WhatsApp:</strong> +91-9242545884</li>
+    <li><strong>Phone:</strong> +91-9242545884 (10:00 AM – 8:00 PM IST, all days)</li>
+    <li><strong>In-app:</strong> "Help & Support" section</li>
+    <li><strong>Response time:</strong> Within 24 hours for non-urgent issues; within 4 hours for payment-related urgent issues</li>
+  </ul>
+
+  <h3>16.2 Step 2 — Grievance Officer</h3>
+  <p>If you are not satisfied with the resolution provided by Customer Support, you may escalate the matter to the designated Grievance Officer:</p>
+  <ul>
+    <li><strong>Email:</strong> support.flashmed247@gmail.com (subject: "GRIEVANCE ESCALATION")</li>
+    <li><strong>Response time:</strong> Within 48 hours of receipt</li>
+    <li><strong>Resolution time:</strong> Within 30 days of receipt as required under the IT (Intermediary Guidelines) Rules, 2021</li>
+  </ul>
+
+  <h3>16.3 Step 3 — Consumer Forums</h3>
+  <p>If your grievance is not resolved through internal channels within 30 days, you may approach:</p>
+  <ul>
+    <li><strong>National Consumer Helpline:</strong> 1915 or consumerhelpline.gov.in</li>
+    <li><strong>Consumer Disputes Redressal Commission</strong> (District / State / National) under the Consumer Protection Act, 2019</li>
+    <li><strong>RBI Banking Ombudsman</strong> for payment-gateway-related disputes (rbi.org.in)</li>
+    <li><strong>Online Dispute Resolution</strong> via the National Internet Exchange of India (NIXI) for digital transaction disputes</li>
+  </ul>
+
+  <h3>16.4 Step 4 — Arbitration</h3>
+  <p>For commercial disputes between FlashMed and Sellers, Blood Banks, or Delivery Partners, disputes shall be resolved through arbitration as specified in their respective registration agreements, governed by the Arbitration and Conciliation Act, 1996, with arbitration seat at <strong>Kolkata, West Bengal</strong>.</p>
+
+  <hr class="divider">
+
+  <!-- ADDITIONAL POLICIES -->
+  <h2>Additional Important Notes</h2>
+
+  <h3>Modification of This Policy</h3>
+  <p>FlashMed reserves the right to modify this Payment, Refund and Cancellation Policy at any time. Material changes will be communicated via in-app notification and/or email at least 7 days before taking effect. Continued use of the Platform constitutes acceptance of the modified Policy. The latest version of this Policy is always available at flashmed.in.</p>
+
+  <h3>No Cash Refunds</h3>
+  <p>FlashMed does not issue cash refunds under any circumstances. All refunds are processed back to the original payment method or via electronic bank transfer (for COD orders).</p>
+
+  <h3>Multi-Order Refunds</h3>
+  <p>Refund requests are processed individually per order. If a Customer requests refunds for multiple orders, each is investigated separately and processed independently.</p>
+
+  <h3>Currency</h3>
+  <p>All payments, refunds, and settlements are denominated in <strong>Indian Rupees (INR)</strong> only. FlashMed does not currently accept payments in any other currency.</p>
+
+  <h3>Goodwill Refunds</h3>
+  <p>In rare circumstances and at FlashMed's sole discretion, FlashMed may issue a goodwill refund or credit for situations not strictly covered by this Policy, where doing so serves customer satisfaction and reasonable expectation. Goodwill refunds do not establish precedent or entitlement for future requests.</p>
+
+  <!-- CONTACT -->
+  <div class="contact-box">
+    <h3>Contact for Payment & Refund Queries</h3>
+    <p><strong>FlashMed Customer Support</strong><br>
+    Website: flashmed.in<br>
+    Email: <a href="mailto:support.flashmed247@gmail.com">support.flashmed247@gmail.com</a><br>
+    WhatsApp / Phone: +91-9242545884<br>
+    Hours: 10:00 AM – 8:00 PM IST (all days)<br>
+    Grievance response time: Within 48 hours<br>
+    Grievance resolution time: Within 30 days</p>
+    <p style="margin-top:16px;font-size:13px;color:#aaa">FlashMed is committed to fair, transparent, and timely resolution of all payment-related concerns. We treat every refund request with the seriousness it deserves and strive to balance Customer protection with operational fairness to our Sellers and Delivery Partners.</p>
+  </div>
+
+  <p style="text-align:center;color:#aaa;font-size:12px;font-family:sans-serif;margin-top:40px">
+    © 2026 FlashMed. All rights reserved. | flashmed.in<br>
+    This Payment, Refund & Cancellation Policy was last updated on April 26, 2026.<br>
+    Version 1.0
+  </p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlashMed — Privacy Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.8; }
+  .wrapper { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+  .logo-header { text-align: center; padding: 40px 0 30px; border-bottom: 3px solid #1a6bcc; margin-bottom: 40px; }
+  .logo-header h1 { font-size: 36px; color: #1a6bcc; font-weight: 900; letter-spacing: -1px; }
+  .logo-header p { color: #666; font-size: 14px; margin-top: 8px; }
+  .effective { background: #1a6bcc; color: #fff; padding: 12px 20px; border-radius: 8px; display: inline-block; font-size: 13px; margin-bottom: 30px; font-family: sans-serif; }
+
+  .critical-box { background: #fff3cd; border: 2px solid #ffc107; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .critical-box h3 { color: #856404; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .critical-box p { color: #533f03; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .red-box { background: #fff5f5; border: 2px solid #ff4444; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .red-box h3 { color: #cc0000; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .red-box p, .red-box li { color: #7a0000; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .green-box { background: #f0fff4; border: 2px solid #00bb88; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .green-box h3 { color: #00684a; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .green-box p, .green-box li { color: #1a5240; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  .info-box { background: #f0f7ff; border: 2px solid #1a6bcc; border-radius: 10px; padding: 24px 28px; margin: 30px 0; }
+  .info-box h3 { color: #1a6bcc; font-size: 16px; margin-bottom: 10px; font-family: sans-serif; }
+  .info-box p, .info-box li { color: #1a3a5c; font-size: 14px; font-family: sans-serif; line-height: 1.7; }
+
+  h2 { font-size: 22px; color: #1a6bcc; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e0e8f5; font-family: sans-serif; }
+  h3 { font-size: 17px; color: #1a1a2e; margin: 28px 0 10px; font-family: sans-serif; }
+  h4 { font-size: 14px; color: #333; margin: 18px 0 8px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+  p { font-size: 15px; color: #333; margin-bottom: 14px; }
+  ul, ol { padding-left: 24px; margin-bottom: 16px; }
+  li { font-size: 15px; color: #333; margin-bottom: 8px; line-height: 1.7; }
+
+  .toc { background: #fff; border: 1px solid #e0e8f5; border-radius: 10px; padding: 24px 28px; margin-bottom: 40px; }
+  .toc h3 { color: #1a6bcc; margin-bottom: 14px; font-family: sans-serif; }
+  .toc ol { padding-left: 20px; }
+  .toc li { font-size: 14px; font-family: sans-serif; margin-bottom: 6px; color: #1a6bcc; }
+
+  .table-container { overflow-x: auto; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; background: #fff; font-family: sans-serif; font-size: 13px; box-shadow: 0 2px 8px rgba(26,107,204,0.06); border-radius: 10px; overflow: hidden; }
+  th { background: #1a6bcc; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
+  td { padding: 12px 14px; border-bottom: 1px solid #e0e8f5; vertical-align: top; color: #333; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #f8f9fa; }
+
+  .data-card { background: #fff; border: 1px solid #e0e8f5; border-radius: 12px; padding: 24px 28px; margin: 18px 0; box-shadow: 0 2px 8px rgba(26,107,204,0.06); }
+  .data-card.essential { border-left: 5px solid #1a6bcc; }
+  .data-card.optional { border-left: 5px solid #00bb88; }
+  .data-card.sensitive { border-left: 5px solid #ff4444; }
+  .data-card h4 { font-size: 15px; color: #1a1a2e; margin-bottom: 10px; }
+  .data-card p { font-size: 13px; color: #555; font-family: sans-serif; margin-bottom: 8px; }
+  .data-card ul { margin-top: 8px; padding-left: 20px; }
+  .data-card li { font-size: 13px; color: #555; font-family: sans-serif; margin-bottom: 4px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; margin-left: 8px; letter-spacing: 0.5px; font-family: sans-serif; }
+  .badge-essential { background: #1a6bcc15; color: #1a6bcc; }
+  .badge-optional  { background: #00bb8815; color: #00bb88; }
+  .badge-sensitive { background: #ff444415; color: #ff4444; }
+
+  .divider { border: none; border-top: 1px solid #e0e8f5; margin: 40px 0; }
+
+  .contact-box { background: #1a1a2e; color: #fff; border-radius: 12px; padding: 28px 32px; margin-top: 50px; }
+  .contact-box h3 { color: #00d4ff; margin-bottom: 14px; }
+  .contact-box p { color: #ccc; font-family: sans-serif; font-size: 14px; }
+  .contact-box a { color: #00d4ff; }
+
+  strong { color: #1a1a2e; }
+  @media (max-width: 600px) { .wrapper { padding: 20px 16px 60px; } h2 { font-size: 18px; } table { font-size: 11px; } th, td { padding: 8px; } }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="logo-header">
+    <h1>⚡ FlashMed</h1>
+    <p>Privacy Policy</p>
+    <p style="margin-top: 6px; font-size: 13px;">flashmed.in | support.flashmed247@gmail.com</p>
+  </div>
+
+  <div style="text-align:center">
+    <span class="effective">Effective Date: April 26, 2026 | Version 1.0</span>
+  </div>
+
+  <!-- INTRO BOX -->
+  <div class="info-box" style="margin-top:30px">
+    <h3>Your Privacy Matters to Us</h3>
+    <p>FlashMed ("we", "us", "our", "Platform") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information we collect, how we use it, who we share it with, and the rights you have over your data. This Policy applies to all users of the FlashMed mobile application and website (flashmed.in). By using FlashMed, you agree to the practices described in this Policy. If you do not agree, please do not use the Platform.</p>
+  </div>
+
+  <!-- COMPLIANCE STATEMENT -->
+  <div class="critical-box">
+    <h3>Compliance with Indian Data Protection Laws</h3>
+    <p>This Privacy Policy is designed to comply with the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong>, the <strong>Information Technology Act, 2000</strong>, the <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (SPDI Rules)</strong>, and the <strong>Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</strong>. Where applicable, FlashMed is also designed to align with the principles of the General Data Protection Regulation (GDPR) for users accessing the Platform from the European Union.</p>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li>Who We Are</li>
+      <li>Definitions</li>
+      <li>Information We Collect</li>
+      <li>How We Collect Information</li>
+      <li>How We Use Your Information</li>
+      <li>Lawful Basis for Processing</li>
+      <li>Sharing Your Information</li>
+      <li>Data Retention</li>
+      <li>Data Security</li>
+      <li>Your Rights as a Data Principal</li>
+      <li>Children and Minors</li>
+      <li>Cookies and Tracking</li>
+      <li>Third-Party Services and Links</li>
+      <li>Push Notifications and Communications</li>
+      <li>International Data Transfers</li>
+      <li>Sensitive Personal Information</li>
+      <li>Account Deletion</li>
+      <li>Changes to This Policy</li>
+      <li>Grievance Officer & Contact</li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2>1. Who We Are</h2>
+  <p>FlashMed is a technology platform that operates a mobile application and website (flashmed.in) connecting customers with independent licensed third-party service providers, including pharmacies, blood banks, and delivery partners. FlashMed acts as an intermediary as defined under Section 2(w) of the Information Technology Act, 2000.</p>
+  <p>For all matters related to data protection, FlashMed acts as the <strong>Data Fiduciary</strong> under the DPDP Act, 2023 in respect of personal data collected directly through the Platform. The Data Fiduciary contact details are provided at the end of this Policy.</p>
+
+  <!-- SECTION 2 -->
+  <h2>2. Definitions</h2>
+  <ul>
+    <li><strong>"Personal Data"</strong> — any information about an individual that can directly or indirectly identify that individual</li>
+    <li><strong>"Sensitive Personal Data"</strong> — passwords, financial information, health data, biometric data, sexual orientation, medical records, and any other information classified as sensitive under applicable law</li>
+    <li><strong>"Data Principal"</strong> — the individual to whom the personal data relates (you, the user)</li>
+    <li><strong>"Data Fiduciary"</strong> — the entity that determines the purpose and means of processing personal data (FlashMed)</li>
+    <li><strong>"Data Processor"</strong> — any third party that processes personal data on behalf of FlashMed (e.g., Firebase, Cloudinary, Cashfree)</li>
+    <li><strong>"Processing"</strong> — any operation performed on personal data, including collection, storage, use, sharing, and deletion</li>
+    <li><strong>"Consent"</strong> — your free, specific, informed, and unambiguous agreement to processing of your personal data</li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2>3. Information We Collect</h2>
+  <p>We collect the following categories of information when you use FlashMed:</p>
+
+  <div class="data-card essential">
+    <h4>Account & Identity Data <span class="badge badge-essential">Essential</span></h4>
+    <p>Required for account creation and authentication.</p>
+    <ul>
+      <li>Full name</li>
+      <li>Mobile phone number (used for OTP authentication)</li>
+      <li>Email address</li>
+      <li>Date of birth or age</li>
+      <li>Gender (optional)</li>
+      <li>Profile picture (if uploaded)</li>
+    </ul>
+  </div>
+
+  <div class="data-card essential">
+    <h4>Address & Location Data <span class="badge badge-essential">Essential</span></h4>
+    <p>Required for delivery and emergency services.</p>
+    <ul>
+      <li>Delivery addresses (home, work, other) — house number, locality, landmark, PIN code, district, state</li>
+      <li>GPS coordinates (latitude/longitude) — only when you grant location permission</li>
+      <li>IP address and device location (approximate)</li>
+    </ul>
+  </div>
+
+  <div class="data-card sensitive">
+    <h4>Health-Related Data <span class="badge badge-sensitive">Sensitive</span></h4>
+    <p>Collected only for the purposes you explicitly request (medicine orders, blood emergency, donor registration).</p>
+    <ul>
+      <li>Prescription images uploaded for medicine orders</li>
+      <li>Blood group (only if you choose to register as a blood donor or submit a blood request)</li>
+      <li>Last blood donation date (only for registered donors)</li>
+      <li>Hospital/medical letters uploaded for blood emergency requests</li>
+      <li>Self-declared eligibility information (e.g., chronic illness, medication status — only for blood donor registration)</li>
+    </ul>
+    <p style="color:#cc0000;font-weight:600;margin-top:10px">FlashMed does not analyze, sell, or use prescription content for marketing, profiling, or any purpose other than fulfilling the specific order you requested.</p>
+  </div>
+
+  <div class="data-card essential">
+    <h4>Payment Data <span class="badge badge-essential">Essential</span></h4>
+    <p>Required to process payments and prevent fraud. We never store your full card or banking credentials.</p>
+    <ul>
+      <li>Transaction reference numbers</li>
+      <li>Payment method type (UPI, card type, wallet, etc.)</li>
+      <li>Last 4 digits of card (for receipt purposes)</li>
+      <li>Bank account details and IFSC (for sellers and delivery partners receiving payouts)</li>
+      <li>PAN (for sellers and delivery partners — for TDS compliance under Income Tax Act)</li>
+    </ul>
+  </div>
+
+  <div class="data-card optional">
+    <h4>Order & Transaction Data <span class="badge badge-optional">Service</span></h4>
+    <p>Generated as you use the Platform.</p>
+    <ul>
+      <li>Order history with dates, items, quantities, prices, sellers</li>
+      <li>Delivery confirmations and OTP verification logs</li>
+      <li>Refund and cancellation history</li>
+      <li>Communication with customer support</li>
+      <li>Ratings and reviews (if provided)</li>
+      <li>Referral activity</li>
+    </ul>
+  </div>
+
+  <div class="data-card optional">
+    <h4>Device & Technical Data <span class="badge badge-optional">Automatic</span></h4>
+    <p>Automatically collected to ensure platform security and improve performance.</p>
+    <ul>
+      <li>Device model, operating system, OS version</li>
+      <li>App version and crash logs</li>
+      <li>Device unique identifiers (Android ID, advertising ID)</li>
+      <li>IP address</li>
+      <li>Browser type (for website access)</li>
+      <li>Push notification tokens</li>
+      <li>Network/carrier information</li>
+      <li>Time zone and language settings</li>
+    </ul>
+  </div>
+
+  <div class="data-card optional">
+    <h4>Usage & Behavioral Data <span class="badge badge-optional">Automatic</span></h4>
+    <p>Used to improve features and detect fraud.</p>
+    <ul>
+      <li>Pages/screens visited within the app</li>
+      <li>Features used and frequency of use</li>
+      <li>Time spent on each section</li>
+      <li>Search queries within the app</li>
+      <li>Clicks, taps, and interaction patterns</li>
+      <li>Easter egg progress and achievement data (gamification feature)</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 4 -->
+  <h2>4. How We Collect Information</h2>
+  <p>We collect information through the following channels:</p>
+  <ul>
+    <li><strong>Directly from you:</strong> When you register, place orders, upload prescriptions, contact support, or fill any form on the Platform</li>
+    <li><strong>Automatically:</strong> Through cookies, server logs, and analytics tools when you use the Platform</li>
+    <li><strong>From third parties:</strong> Payment processors confirm transaction status; SMS gateways confirm OTP delivery</li>
+    <li><strong>From device sensors (with permission):</strong> GPS for location, camera for prescription scanning, gyroscope for app interactions</li>
+  </ul>
+
+  <h3>4.1 Permissions We Request</h3>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Camera</td><td>Capture prescription photos and profile picture</td><td>Optional (only when scanning)</td></tr>
+        <tr><td>Photo Gallery</td><td>Upload prescription images from gallery</td><td>Optional (only when selecting)</td></tr>
+        <tr><td>Location (GPS)</td><td>Auto-fetch delivery address, find nearby pharmacies</td><td>Optional (manual entry available)</td></tr>
+        <tr><td>Notifications</td><td>Order status updates, delivery alerts, blood emergency alerts</td><td>Optional (recommended)</td></tr>
+        <tr><td>Phone (OTP read)</td><td>Auto-fill OTP for faster login</td><td>Optional</td></tr>
+        <tr><td>Internet</td><td>Connect to FlashMed servers</td><td>Required</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>You can revoke any optional permission at any time through your device's settings. Some features may stop working if related permissions are revoked.</p>
+
+  <!-- SECTION 5 -->
+  <h2>5. How We Use Your Information</h2>
+  <p>We use your data only for legitimate business purposes, including:</p>
+
+  <h3>5.1 Service Delivery</h3>
+  <ul>
+    <li>Creating and managing your account</li>
+    <li>Authenticating you via OTP login</li>
+    <li>Processing your medicine orders end-to-end</li>
+    <li>Coordinating blood emergency requests with blood banks and donors</li>
+    <li>Routing delivery to the assigned partner</li>
+    <li>Showing you order status and delivery tracking</li>
+    <li>Generating delivery OTPs for secure handover</li>
+    <li>Processing payments and refunds</li>
+    <li>Providing customer support</li>
+  </ul>
+
+  <h3>5.2 Communication</h3>
+  <ul>
+    <li>Sending order status updates via push notification, SMS, and email</li>
+    <li>Sending payment confirmations and receipts</li>
+    <li>Sending blood emergency alerts to matching donors and blood banks</li>
+    <li>Responding to your support queries</li>
+    <li>Sending occasional promotional messages (with your consent — you can opt out anytime)</li>
+  </ul>
+
+  <h3>5.3 Safety, Fraud Prevention, and Compliance</h3>
+  <ul>
+    <li>Detecting and preventing fraudulent transactions</li>
+    <li>Investigating policy violations</li>
+    <li>Complying with legal obligations under Indian law</li>
+    <li>Cooperating with law enforcement when legally required</li>
+    <li>Enforcing our Terms and Conditions</li>
+    <li>Verifying authenticity of blood emergency requests</li>
+  </ul>
+
+  <h3>5.4 Improvement and Analytics</h3>
+  <ul>
+    <li>Analyzing how features are used (in aggregate, not individually)</li>
+    <li>Diagnosing crashes and technical issues</li>
+    <li>Improving app performance and user experience</li>
+    <li>Developing new features and services</li>
+  </ul>
+
+  <h3>5.5 Things We DO NOT Do With Your Data</h3>
+  <div class="red-box">
+    <h3>Strict Commitments</h3>
+    <ul>
+      <li>We <strong>do not sell</strong> your personal data to advertisers or any third party</li>
+      <li>We <strong>do not analyze</strong> your prescription content for advertising or profiling</li>
+      <li>We <strong>do not share</strong> your blood group, health data, or medical information with anyone except for the specific service you request (e.g., the matched blood bank)</li>
+      <li>We <strong>do not track you</strong> across other apps or websites</li>
+      <li>We <strong>do not use</strong> your data to train AI/ML models for sale to others</li>
+      <li>We <strong>do not show targeted advertisements</strong> based on your medical conditions</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2>6. Lawful Basis for Processing</h2>
+  <p>Under the DPDP Act, 2023, we process your data only when we have a lawful basis. The applicable bases are:</p>
+  <ul>
+    <li><strong>Your Consent</strong> — When you create an account, upload a prescription, register as a blood donor, or grant device permissions</li>
+    <li><strong>Contractual Necessity</strong> — To fulfill the order you placed (we cannot deliver medicines without your address)</li>
+    <li><strong>Legal Obligation</strong> — To comply with tax laws, drug laws, IT Act, and other regulations</li>
+    <li><strong>Legitimate Interest</strong> — Fraud prevention, platform security, business operations (balanced against your rights)</li>
+    <li><strong>Vital Interest</strong> — Sharing critical information with hospitals/responders during a verified blood emergency</li>
+  </ul>
+
+  <!-- SECTION 7 -->
+  <h2>7. Sharing Your Information</h2>
+  <p>We share data only with parties who need it to provide the services you request, or where required by law. Categories of recipients:</p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr><th>Recipient</th><th>Data Shared</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sellers (Pharmacies)</strong></td>
+          <td>Customer name, phone, address, prescription image</td>
+          <td>To prepare and dispense the order</td>
+        </tr>
+        <tr>
+          <td><strong>Delivery Partners</strong></td>
+          <td>Customer name, phone, address, delivery OTP</td>
+          <td>To deliver the order</td>
+        </tr>
+        <tr>
+          <td><strong>Blood Banks</strong></td>
+          <td>Patient name, phone, blood group, hospital location</td>
+          <td>To respond to blood emergency requests</td>
+        </tr>
+        <tr>
+          <td><strong>Voluntary Blood Donors</strong></td>
+          <td>Patient location (approximate), urgency, blood group required</td>
+          <td>To request donation; full patient details only after donor accepts</td>
+        </tr>
+        <tr>
+          <td><strong>Cashfree Payments</strong></td>
+          <td>Transaction details, name, contact</td>
+          <td>Processing payments and payouts</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase (Google LLC)</strong></td>
+          <td>Account, device, usage data</td>
+          <td>Cloud database, push notifications, crash analytics</td>
+        </tr>
+        <tr>
+          <td><strong>Cloudinary</strong></td>
+          <td>Prescription images, profile photos</td>
+          <td>Secure image storage with restricted access</td>
+        </tr>
+        <tr>
+          <td><strong>Expo (Push Notifications)</strong></td>
+          <td>Push tokens, notification content</td>
+          <td>Delivering push notifications</td>
+        </tr>
+        <tr>
+          <td><strong>Government / Law Enforcement</strong></td>
+          <td>As legally compelled</td>
+          <td>Compliance with court orders, tax authorities, drug controllers</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.1 Data Processing Agreements</h3>
+  <p>Each third-party processor we engage is bound by a written Data Processing Agreement requiring them to:</p>
+  <ul>
+    <li>Process data only on our documented instructions</li>
+    <li>Implement appropriate security measures</li>
+    <li>Not transfer data outside permitted jurisdictions</li>
+    <li>Notify us of any data breach without undue delay</li>
+    <li>Delete or return data when our agreement ends</li>
+  </ul>
+
+  <h3>7.2 No Sale of Personal Data</h3>
+  <div class="green-box">
+    <h3>Our Commitment</h3>
+    <p>FlashMed has never sold, and will never sell, your personal data to any advertiser, data broker, or third party for commercial purposes. Your data is shared only as described above and only for the purposes stated.</p>
+  </div>
+
+  <!-- SECTION 8 -->
+  <h2>8. Data Retention</h2>
+  <p>We retain your data only as long as necessary for the purposes outlined in this Policy, or as required by law:</p>
+
+  <div class="table-container">
+    <table>
+      <thead><tr><th>Data Category</th><th>Retention Period</th><th>Reason</th></tr></thead>
+      <tbody>
+        <tr><td>Account information</td><td>Until account deletion, then 90 days for legal compliance</td><td>Service delivery, tax compliance</td></tr>
+        <tr><td>Order records</td><td>5 years from order date</td><td>Drugs and Cosmetics Act, Income Tax Act compliance</td></tr>
+        <tr><td>Prescription images</td><td>2 years from order date, then permanently deleted</td><td>Drug regulation compliance, dispute resolution</td></tr>
+        <tr><td>Payment transaction logs</td><td>8 years from transaction date</td><td>RBI guidelines, Income Tax Act</td></tr>
+        <tr><td>Blood donation records</td><td>2 years from last donation</td><td>NACO/NBTC guidelines</td></tr>
+        <tr><td>Device and usage logs</td><td>1 year</td><td>Security, fraud detection</td></tr>
+        <tr><td>Customer support correspondence</td><td>3 years</td><td>Quality assurance, dispute resolution</td></tr>
+        <tr><td>Marketing preferences</td><td>Until you withdraw consent</td><td>Honoring your preferences</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>After the retention period expires, data is either deleted, anonymized (so it cannot be linked to you), or archived in encrypted form for the minimum legal period.</p>
+
+  <!-- SECTION 9 -->
+  <h2>9. Data Security</h2>
+  <p>We implement reasonable security measures consistent with the SPDI Rules, 2011 and DPDP Act, 2023:</p>
+  <ul>
+    <li><strong>Encryption in transit:</strong> All communication uses TLS 1.2 or higher</li>
+    <li><strong>Encryption at rest:</strong> Sensitive data (prescriptions, identity documents) encrypted in storage</li>
+    <li><strong>Access control:</strong> Strict role-based access; only authorized personnel can access user data</li>
+    <li><strong>Authentication:</strong> OTP-based login; no password storage on our servers</li>
+    <li><strong>Payment security:</strong> Card and banking details handled exclusively by PCI-DSS Level 1 certified payment processors</li>
+    <li><strong>Database security:</strong> Firestore security rules, regular security audits</li>
+    <li><strong>Vulnerability management:</strong> Regular dependency updates, security patching</li>
+    <li><strong>Audit logs:</strong> All data access events logged and monitored</li>
+    <li><strong>Backup and recovery:</strong> Encrypted backups with disaster recovery procedures</li>
+  </ul>
+
+  <h3>9.1 Security Limitations</h3>
+  <p>While we implement industry-standard security, no system is 100% secure. We cannot guarantee absolute security of data transmitted over the internet. By using FlashMed, you acknowledge this limitation. You can help by:</p>
+  <ul>
+    <li>Not sharing your OTP with anyone</li>
+    <li>Logging out of shared devices</li>
+    <li>Reporting suspicious activity to support@flashmed.in immediately</li>
+    <li>Keeping your phone secure with biometric/PIN lock</li>
+    <li>Updating the FlashMed app to the latest version</li>
+  </ul>
+
+  <h3>9.2 Data Breach Notification</h3>
+  <p>In the unlikely event of a data breach affecting your personal information, we will:</p>
+  <ul>
+    <li>Notify the Data Protection Board of India within 72 hours of becoming aware</li>
+    <li>Notify affected users without undue delay via email and in-app notification</li>
+    <li>Describe the nature of the breach, data affected, and remediation steps</li>
+    <li>Provide support to mitigate any potential harm</li>
+  </ul>
+
+  <!-- SECTION 10 -->
+  <h2>10. Your Rights as a Data Principal</h2>
+  <p>Under the DPDP Act, 2023, you have the following rights:</p>
+
+  <div class="info-box">
+    <h3>Your Rights — Quick Reference</h3>
+    <ul>
+      <li><strong>Right to Access:</strong> Request a copy of your personal data we hold</li>
+      <li><strong>Right to Correction:</strong> Update inaccurate or incomplete information</li>
+      <li><strong>Right to Erasure:</strong> Request deletion of your data (subject to legal retention requirements)</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time for processing based on consent</li>
+      <li><strong>Right to Grievance Redressal:</strong> File a grievance with our Grievance Officer</li>
+      <li><strong>Right to Nominate:</strong> Nominate another individual to exercise your rights in case of incapacity or death</li>
+      <li><strong>Right to Object:</strong> Object to processing based on legitimate interest in certain circumstances</li>
+      <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+    </ul>
+  </div>
+
+  <h3>10.1 How to Exercise Your Rights</h3>
+  <ol>
+    <li>Email <strong>support.flashmed247@gmail.com</strong> with subject "Data Rights Request"</li>
+    <li>Specify which right you wish to exercise</li>
+    <li>Provide your registered phone number for identity verification</li>
+    <li>We will respond within <strong>30 days</strong> (15 days for simple requests like access)</li>
+    <li>If we cannot fulfill your request (e.g., due to legal retention), we will explain why in writing</li>
+  </ol>
+
+  <h3>10.2 No Discrimination for Exercising Rights</h3>
+  <p>We will not discriminate against you, deny service, charge extra, or reduce service quality because you exercised your privacy rights.</p>
+
+  <!-- SECTION 11 -->
+  <h2>11. Children and Minors</h2>
+  <div class="critical-box">
+    <h3>Age Restriction — 18 Years Minimum</h3>
+    <p>FlashMed is intended only for users aged <strong>18 years or older</strong>. We do not knowingly collect personal data from children under 18. If we discover we have collected data from a minor without verifiable parental consent, we will delete it promptly. If you believe a minor has provided us data, please contact <strong>support.flashmed247@gmail.com</strong> immediately.</p>
+  </div>
+  <p>Under the DPDP Act, 2023, processing personal data of minors requires verifiable parental consent. We do not target the Platform at children, do not run age-targeted advertising, and do not engage in tracking or behavioral monitoring of minors.</p>
+
+  <!-- SECTION 12 -->
+  <h2>12. Cookies and Tracking</h2>
+  <p>The FlashMed website (flashmed.in) uses cookies and similar technologies to provide a better experience. The mobile app uses comparable device storage mechanisms.</p>
+
+  <h3>12.1 Types of Cookies We Use</h3>
+  <ul>
+    <li><strong>Essential Cookies:</strong> Required for the site to function (authentication, session management). Cannot be disabled</li>
+    <li><strong>Analytics Cookies:</strong> Help us understand how the site is used (Google Analytics or similar). Anonymized</li>
+    <li><strong>Functional Cookies:</strong> Remember your preferences (language, theme)</li>
+  </ul>
+  <p>We do <strong>not</strong> use advertising or tracking cookies that follow you to other websites.</p>
+
+  <h3>12.2 Managing Cookies</h3>
+  <p>You can control cookies through your browser settings. Disabling essential cookies may break some features. Mobile app preferences can be reset via your device settings.</p>
+
+  <!-- SECTION 13 -->
+  <h2>13. Third-Party Services and Links</h2>
+  <p>The Platform integrates with the following third-party services. Each has its own privacy policy:</p>
+  <ul>
+    <li><strong>Cashfree Payments</strong> (payment processing) — <a href="https://www.cashfree.com/privacy-policy/" target="_blank">View Policy</a></li>
+    <li><strong>Firebase / Google Cloud</strong> (database, push notifications) — <a href="https://policies.google.com/privacy" target="_blank">View Policy</a></li>
+    <li><strong>Cloudinary</strong> (image storage) — <a href="https://cloudinary.com/privacy" target="_blank">View Policy</a></li>
+    <li><strong>Expo Services</strong> (push notification delivery) — <a href="https://expo.dev/privacy" target="_blank">View Policy</a></li>
+    <li><strong>OpenStreetMap / Nominatim</strong> (reverse geocoding for addresses)</li>
+  </ul>
+  <p>FlashMed is not responsible for the privacy practices of these third parties beyond what is contractually required of them. We encourage you to review their policies separately.</p>
+
+  <!-- SECTION 14 -->
+  <h2>14. Push Notifications and Communications</h2>
+  <h3>14.1 Push Notifications</h3>
+  <p>With your permission, we send push notifications for:</p>
+  <ul>
+    <li>Order status updates (essential)</li>
+    <li>Delivery arrival alerts (essential)</li>
+    <li>Blood emergency requests (if you are a registered donor)</li>
+    <li>Payment confirmations</li>
+    <li>Customer support replies</li>
+    <li>Promotional offers (only if you opt-in)</li>
+  </ul>
+  <p>You can disable any category in your device's notification settings. Disabling order/delivery notifications may impact service quality.</p>
+
+  <h3>14.2 SMS and Email Communications</h3>
+  <ul>
+    <li>OTP messages — sent for authentication only</li>
+    <li>Transactional SMS — order confirmations, delivery OTPs</li>
+    <li>Email receipts — order summaries, refund notifications</li>
+    <li>Marketing emails — only with your consent; unsubscribe link in every email</li>
+  </ul>
+
+  <h3>14.3 DND Compliance</h3>
+  <p>We comply with TRAI's National Customer Preference Register (DND) regulations. Even if you are on DND, transactional SMS (OTP, order updates) will still be delivered as legally permitted.</p>
+
+  <!-- SECTION 15 -->
+  <h2>15. International Data Transfers</h2>
+  <p>FlashMed primarily stores user data within India through Firebase's asia-south1 region. However, some service providers (like Google Cloud, Cloudinary) may process data in other countries:</p>
+  <ul>
+    <li><strong>India:</strong> Primary data storage region</li>
+    <li><strong>United States:</strong> Cloudinary and certain Google services</li>
+    <li><strong>European Union:</strong> Some backup and analytics processing</li>
+  </ul>
+  <p>For any cross-border transfers, we ensure adequate protection through:</p>
+  <ul>
+    <li>Standard Contractual Clauses (SCCs) where applicable</li>
+    <li>Selecting providers with strong data protection certifications (ISO 27001, SOC 2)</li>
+    <li>Compliance with DPDP Act, 2023 cross-border transfer rules and any restrictions notified by the Central Government</li>
+  </ul>
+
+  <!-- SECTION 16 -->
+  <h2>16. Sensitive Personal Information</h2>
+  <p>Health-related data (prescriptions, blood group, donation records) is treated as Sensitive Personal Information. Special protections include:</p>
+  <ul>
+    <li><strong>Explicit consent</strong> required for collection and processing</li>
+    <li><strong>Encrypted storage</strong> at rest</li>
+    <li><strong>Restricted access</strong> — only authorized personnel and the specific seller fulfilling your order</li>
+    <li><strong>No marketing use</strong> — never used for ads, recommendations, or profiling</li>
+    <li><strong>No sharing</strong> with third parties beyond the specific service requested</li>
+    <li><strong>Right to withdraw</strong> consent at any time (subject to ongoing legal retention)</li>
+    <li><strong>Audit logging</strong> of all access events</li>
+  </ul>
+
+  <!-- SECTION 17 -->
+  <h2>17. Account Deletion</h2>
+  <p>You have the right to delete your FlashMed account at any time.</p>
+
+  <h3>17.1 How to Delete Your Account</h3>
+  <ol>
+    <li>Open the FlashMed app</li>
+    <li>Go to Profile → Danger Zone → "Delete My Account"</li>
+    <li>Confirm twice (this action is irreversible)</li>
+    <li>Alternatively, email <strong>support.flashmed247@gmail.com</strong> with subject "Account Deletion Request"</li>
+  </ol>
+
+  <h3>17.2 What Happens When You Delete Your Account</h3>
+  <ul>
+    <li>Your profile, preferences, and addresses are deleted within 7 days</li>
+    <li>Your prescriptions are deleted within 30 days, except those linked to active or recently completed orders (retained 2 years for legal compliance)</li>
+    <li>Your order history is anonymized after 30 days but retained in anonymized form for tax/legal compliance</li>
+    <li>Your blood donor registration (if applicable) is deactivated immediately and deleted within 7 days</li>
+    <li>Push tokens, device IDs, and location history are deleted within 7 days</li>
+    <li>Active referral relationships are anonymized so referees are not affected</li>
+  </ul>
+
+  <h3>17.3 Data We Cannot Delete Immediately</h3>
+  <p>By law, we must retain certain records even after account deletion:</p>
+  <ul>
+    <li>Payment transaction records — 8 years (RBI/Income Tax Act)</li>
+    <li>Order details with prescriptions — 2 years (Drugs and Cosmetics Act)</li>
+    <li>Tax-related documents — as required by Income Tax Act, 1961</li>
+    <li>Records pending legal proceedings or regulatory investigation</li>
+  </ul>
+  <p>This retained data is encrypted, access-restricted, and used only for the legal purpose stated.</p>
+
+  <!-- SECTION 18 -->
+  <h2>18. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy to reflect changes in our practices, technology, or legal requirements. When we make material changes:</p>
+  <ul>
+    <li>We will update the "Effective Date" at the top of this Policy</li>
+    <li>We will notify you via email and in-app notification at least <strong>15 days</strong> before changes take effect</li>
+    <li>For significant changes affecting how we use your data, we may seek fresh consent</li>
+    <li>If you do not agree with revised terms, you may delete your account before the effective date</li>
+  </ul>
+  <p>The latest version is always available at <strong>flashmed.in/privacy</strong>. We encourage you to review periodically.</p>
+
+  <!-- SECTION 19 -->
+  <h2>19. Grievance Officer & Contact</h2>
+  <p>For any privacy concerns, data rights requests, or grievances, please contact:</p>
+
+  <div class="contact-box">
+    <h3>Grievance Officer / Data Protection Contact</h3>
+    <p>
+      <strong>FlashMed</strong><br>
+      Website: flashmed.in<br>
+      Email: <a href="mailto:support.flashmed247@gmail.com">support.flashmed247@gmail.com</a><br>
+      WhatsApp / Phone: +91-9242545884<br>
+      Hours: 10:00 AM – 8:00 PM IST (all days)<br>
+      <br>
+      <strong>Response Times:</strong><br>
+      Acknowledgment: Within 48 hours<br>
+      Resolution: Within 30 days (DPDP Act, 2023 compliant)
+    </p>
+    <p style="margin-top:16px;font-size:13px;color:#aaa">In accordance with Rule 3(2) of the IT (Intermediary Guidelines) Rules, 2021 and the DPDP Act, 2023, a Grievance Officer has been designated to receive and address all complaints related to personal data processing.</p>
+  </div>
+
+  <h3>19.1 Escalation</h3>
+  <p>If you are not satisfied with our response, you may escalate to:</p>
+  <ul>
+    <li><strong>Data Protection Board of India</strong> (once operational under DPDP Act, 2023)</li>
+    <li><strong>Ministry of Electronics and Information Technology (MeitY)</strong></li>
+    <li><strong>National Consumer Helpline:</strong> 1915 or consumerhelpline.gov.in</li>
+    <li><strong>Indian Cyber Crime Coordination Centre:</strong> cybercrime.gov.in</li>
+  </ul>
+
+  <hr class="divider">
+
+  <!-- SUMMARY -->
+  <h2>Quick Summary</h2>
+  <div class="info-box">
+    <h3>What This Policy Means in Plain Language</h3>
+    <ul>
+      <li>We collect what we need to deliver medicines and coordinate blood emergencies</li>
+      <li>We never sell your data — to anyone, ever</li>
+      <li>Your prescriptions are private, encrypted, and only seen by the pharmacy filling your order</li>
+      <li>We comply with Indian data protection law (DPDP Act, IT Act, SPDI Rules)</li>
+      <li>You can request your data, correct it, or delete your account anytime</li>
+      <li>We respond to privacy questions within 30 days</li>
+      <li>Children under 18 cannot use FlashMed</li>
+      <li>If we have a data breach, we tell you within 72 hours</li>
+    </ul>
+  </div>
+
+  <p style="text-align:center;color:#aaa;font-size:12px;font-family:sans-serif;margin-top:40px">
+    © 2026 FlashMed. All rights reserved. | flashmed.in<br>
+    This Privacy Policy was last updated on April 26, 2026.<br>
+    Version 1.0
+  </p>
+
+</div>
+</body>
+</html>
